@@ -1,0 +1,13 @@
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\bin\Debug\netcoreapp3.1\mini_jeu.exe
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\bin\Debug\netcoreapp3.1\mini_jeu.deps.json
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\bin\Debug\netcoreapp3.1\mini_jeu.runtimeconfig.json
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\bin\Debug\netcoreapp3.1\mini_jeu.runtimeconfig.dev.json
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\bin\Debug\netcoreapp3.1\mini_jeu.dll
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\bin\Debug\netcoreapp3.1\mini_jeu.pdb
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\obj\Debug\netcoreapp3.1\mini_jeu.csprojAssemblyReference.cache
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\obj\Debug\netcoreapp3.1\mini_jeu.AssemblyInfoInputs.cache
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\obj\Debug\netcoreapp3.1\mini_jeu.AssemblyInfo.cs
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\obj\Debug\netcoreapp3.1\mini_jeu.csproj.CoreCompileInputs.cache
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\obj\Debug\netcoreapp3.1\mini_jeu.dll
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\obj\Debug\netcoreapp3.1\mini_jeu.pdb
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_1\mini_jeu\obj\Debug\netcoreapp3.1\mini_jeu.genruntimeconfig.cache
