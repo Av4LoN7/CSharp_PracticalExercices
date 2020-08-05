@@ -8,7 +8,7 @@ namespace mini_jeu
     {
         public int PointDeVie { get; private set; }
 
-        public bool EstVivant 
+        public bool EstVivant
         {
             get { return this.PointDeVie > 0; }
         }
@@ -20,18 +20,18 @@ namespace mini_jeu
 
         public void Attaquer(MonstreFacile target)
         {
-            if(target is Boss boss) {
-                boss.SubitDegat(De.LanceDeDe(De.MultiplicateurBoss));
-                if(!boss.BossVivant)
-                {
-                    boss.EstVaincu();
-                }
+            if (this.LanceDeDe() >= target.LanceDeDe())
+            {
+                target.EstVaincu();
             }
-            else  {
-                if(this.LanceDeDe() >= target.LanceDeDe())
-                {
-                    target.EstVaincu();
-                }
+        }
+
+        public void Attaquer(Boss target) 
+        {
+            target.SubitDegat(this.LanceDeDe(26));
+            if (!target.BossVivant)
+            {
+                target.EstVaincu();
             }
         }
 
@@ -42,18 +42,23 @@ namespace mini_jeu
                 Console.WriteLine($"Le hero subit {nombreDegat} pts de degats");
             }
             else {
-                Console.WriteLine("Notre sauveur ne subit aucun degat grace à l'utilisation de son fidele bouclier !");
+                Console.WriteLine("Notre sauveur ne subit aucun dégat grâce à l'utilisation de son fidèle bouclier !");
             }
         }
 
         public bool BouclierFonctionnel()
         {
-            return De.LanceDeDe() >= 2;
+            return this.LanceDeDe() <= 2;
         }
 
         public int LanceDeDe()
         {
             return De.LanceDeDe();
+        }
+
+        public int LanceDeDe(int valeur)
+        {
+            return De.LanceDeDe(valeur);
         }
 
     }

@@ -9,8 +9,13 @@ namespace mini_jeu
 
         static void Main()
         {
-            Console.WriteLine("A quel jeu voulez vous jouer ? (1 : horde, 2: boss)");
+            AfficherMenu();
             int choix = int.Parse(Console.ReadLine());
+            while(choix != 1 && choix != 2)
+            {
+                AfficherMenu();
+                choix = int.Parse(Console.ReadLine());
+            }
             if (choix == 1)
             {
                 Jeu1();
@@ -21,9 +26,13 @@ namespace mini_jeu
             }
         }       
 
+        private static void AfficherMenu()
+        {
+            Console.WriteLine("A quel jeu voulez vous jouer ? (1 : horde, 2: boss)");
+        }
         private static MonstreFacile CreateMonster()
         {
-            return choixMonstre.Next(1) == 0 ? new MonstreFacile() : new MonstreDifficile();
+            return choixMonstre.Next(0,2) == 0 ? new MonstreFacile() : new MonstreDifficile();
         }
 
         private static void Jeu1()
@@ -72,7 +81,7 @@ namespace mini_jeu
         private static void Jeu2()
         {
             Hero hero = new Hero(150);
-            MonstreFacile boss = new Boss(250);
+            Boss boss = new Boss(250);
 
             Console.WriteLine($"Notre hero s'avance devant la menace et tombe nez à nez face à un {boss.Type} !");
             while (hero.EstVivant && boss.EstVivant )

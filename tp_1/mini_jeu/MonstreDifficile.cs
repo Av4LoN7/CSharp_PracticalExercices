@@ -14,9 +14,11 @@ namespace mini_jeu
         public override void Attaquer(Hero target)
         {
             base.Attaquer(target);
-            if (target.EstVivant) {
-                int AttaqueMagique = De.LanceDeDe();
-                if (AttaqueMagique != 6) {
+            if (target.EstVivant) 
+            {
+                int AttaqueMagique = this.LanceDeDe();
+                if (AttaqueMagique != 6) 
+                {
                     Console.WriteLine("Au mon dieu le monstre enchaine avec une attaque magique dévastatrice");
                     target.SubitDegat(AttaqueMagique * Multiplicateur);
                 }

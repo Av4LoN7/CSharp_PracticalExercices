@@ -26,7 +26,12 @@ namespace mini_jeu
 
         public override void Attaquer(Hero target)
         {
-            target.SubitDegat(De.LanceDeDe(De.MultiplicateurBoss));
+            target.SubitDegat(this.LanceDeDe(26));
+        }
+
+        public int LanceDeDe(int valeur)
+        {
+            return De.LanceDeDe(valeur);
         }
     }
 }
