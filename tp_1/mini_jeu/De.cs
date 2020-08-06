@@ -7,14 +7,7 @@ namespace mini_jeu
     static class De
     {
         public static Random DeALancer = new Random();
-        public static int LanceDeDe()
-        {
-            return DeALancer.Next(1, 7);
-        }
-
-        public static int LanceDeDe(int value)
-        {
-            return DeALancer.Next(1, value);
-        }
+        public static int LanceDeDe() => DeALancer.Next(1, 7);
+        public static int LanceDeDe(int value) => DeALancer.Next(1, value);
     }
 }

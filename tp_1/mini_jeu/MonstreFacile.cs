@@ -25,14 +25,7 @@ namespace mini_jeu
                 Console.WriteLine("Lennemi rate son coup mouhahahahah");
             }
         }
-        public void EstVaincu()
-        {
-            this.EstVivant = false;
-        }
-
-        public int LanceDeDe()
-        {
-            return De.LanceDeDe();
-        }
+        public void EstVaincu() => this.EstVivant = false;
+        public int LanceDeDe() => De.LanceDeDe();
     }
 }

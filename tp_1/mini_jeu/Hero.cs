@@ -46,20 +46,9 @@ namespace mini_jeu
             }
         }
 
-        public bool BouclierFonctionnel()
-        {
-            return this.LanceDeDe() <= 2;
-        }
-
-        public int LanceDeDe()
-        {
-            return De.LanceDeDe();
-        }
-
-        public int LanceDeDe(int valeur)
-        {
-            return De.LanceDeDe(valeur);
-        }
+        public bool BouclierFonctionnel() => this.LanceDeDe() <= 2;
+        public int LanceDeDe() => De.LanceDeDe();
+        public int LanceDeDe(int valeur) => De.LanceDeDe(valeur);
 
     }
 }

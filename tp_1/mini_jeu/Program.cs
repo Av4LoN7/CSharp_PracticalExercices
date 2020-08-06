@@ -9,19 +9,25 @@ namespace mini_jeu
 
         static void Main()
         {
-            AfficherMenu();
-            int choix = int.Parse(Console.ReadLine());
-            while(choix != 1 && choix != 2)
+            int choix = 0;
+            while (choix != 1 && choix != 2)
             {
                 AfficherMenu();
-                choix = int.Parse(Console.ReadLine());
+                try
+                {
+                    choix = int.Parse(Console.ReadLine());
+
+                }
+                catch (System.FormatException ex)
+                {
+                    Console.WriteLine(ex.Message + " please retry");
+                }
             }
-            if (choix == 1)
-            {
+
+            if (choix == 1){
                 Jeu1();
             }
-            else
-            {
+            else {
                 Jeu2();
             }
         }       

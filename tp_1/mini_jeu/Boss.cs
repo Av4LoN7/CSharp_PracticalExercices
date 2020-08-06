@@ -24,14 +24,7 @@ namespace mini_jeu
             Console.WriteLine($"Le Boss subit {nbrDegat} pts de degats");
         }
 
-        public override void Attaquer(Hero target)
-        {
-            target.SubitDegat(this.LanceDeDe(26));
-        }
-
-        public int LanceDeDe(int valeur)
-        {
-            return De.LanceDeDe(valeur);
-        }
+        public override void Attaquer(Hero target) => target.SubitDegat(this.LanceDeDe(26));
+        public int LanceDeDe(int valeur) => De.LanceDeDe(valeur);
     }
 }
