@@ -1,0 +1,13 @@
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\bin\Debug\netcoreapp3.1\lightMeteoSimulator.exe
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\bin\Debug\netcoreapp3.1\lightMeteoSimulator.deps.json
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\bin\Debug\netcoreapp3.1\lightMeteoSimulator.runtimeconfig.json
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\bin\Debug\netcoreapp3.1\lightMeteoSimulator.runtimeconfig.dev.json
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\bin\Debug\netcoreapp3.1\lightMeteoSimulator.dll
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\bin\Debug\netcoreapp3.1\lightMeteoSimulator.pdb
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\obj\Debug\netcoreapp3.1\lightMeteoSimulator.csprojAssemblyReference.cache
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\obj\Debug\netcoreapp3.1\lightMeteoSimulator.AssemblyInfoInputs.cache
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\obj\Debug\netcoreapp3.1\lightMeteoSimulator.AssemblyInfo.cs
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\obj\Debug\netcoreapp3.1\lightMeteoSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\obj\Debug\netcoreapp3.1\lightMeteoSimulator.dll
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\obj\Debug\netcoreapp3.1\lightMeteoSimulator.pdb
+C:\Users\Av4LoN\Documents\web\WEB 2020\C#\tp_3\lightMeteoSimulator\obj\Debug\netcoreapp3.1\lightMeteoSimulator.genruntimeconfig.cache
