@@ -36,30 +36,15 @@ namespace lightMeteoSimulator
             {
                 if(val >= 5 && val < 50)
                 {
-                    Console.WriteLine("il fait beau");
-                    if(ChangementTemps != null)
-                    {
-                        this.BeauTemps++;
-                        ChangementTemps(this, new ChangementTempsEvent { BeauTemps = this.BeauTemps, MauvaisTemps = this.MauvaisTemps });
-                    }
+                    ProcessWeather(2);
                 }
                 else if(val >= 50 && val <= 90)
                 {
-                    Console.WriteLine("il pleut");
-                    if (ChangementTemps != null)
-                    {
-                        this.MauvaisTemps++;
-                        ChangementTemps(this, new ChangementTempsEvent { BeauTemps = this.BeauTemps, MauvaisTemps = this.MauvaisTemps });
-                    }
+                    ProcessWeather(0);
                 }
                 else
                 {
-                    Console.WriteLine("il y a de l'orage");
-                    if (ChangementTemps != null)
-                    {
-                        this.MauvaisTemps++;
-                        ChangementTemps(this, new ChangementTempsEvent { BeauTemps = this.BeauTemps, MauvaisTemps = this.MauvaisTemps });
-                    }
+                    ProcessWeather(1);
                 }
             }
         }
@@ -72,7 +57,25 @@ namespace lightMeteoSimulator
 
         private void TriggerEvent(object sender, ChangementTempsEvent e)
         {
-            Console.WriteLine("event levé !");
+            //Console.WriteLine("event levé !");
+        }
+
+        // weather process: 0 or 1 = bad weather, 2 = sunny
+        private void ProcessWeather(int weather = 0)
+        {
+            if (ChangementTemps != null)
+            {
+                Console.WriteLine(weather == 0 ? "il pleut" : weather == 1 ? "il ya orage" : "il fait beau");
+                if(weather == 2)
+                {
+                    this.BeauTemps++;
+                }
+                else
+                {
+                    this.MauvaisTemps++;
+                }
+                ChangementTemps(this, new ChangementTempsEvent { BeauTemps = this.BeauTemps, MauvaisTemps = this.MauvaisTemps });
+            }
         }
     }
 }
